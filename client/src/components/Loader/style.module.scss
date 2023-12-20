@@ -1,0 +1,23 @@
+@import '@styles/base';
+
+.loaderComponent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: $color-white-fade;
+  z-index: 9990;
+  .progress {
+    top: 0;
+    position: absolute;
+    height: 0.2rem;
+    width: 100%;
+  }
+  &.showLoader {
+    display: flex;
+  }
+}
